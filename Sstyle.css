@@ -16,7 +16,7 @@ body {
     width: 90%;
     max-width: 350px;
     text-align: center;
-    transition: 0.5s;
+    
 }
 
 /
@@ -41,8 +41,6 @@ body {
     margin-top: 15px;
 }
 
-/* OTROS ESTILOS */
-h1 { color: #2c3e50; margin-top: 5px; }
 
 input {
     width: 100%;
@@ -80,5 +78,5 @@ img { width: 100%; border-radius: 8px; margin: 15px 0; }
     padding: 8px 15px;
     border-radius: 5px;
     margin-top: 20px;
-    cursor: pointer;
+    
 }
