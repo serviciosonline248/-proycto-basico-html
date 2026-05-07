@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor" id="caja-principal">
+        
+        <div id="pantalla-login">
+            <p class="logo">🌿 ECO-SISTEMA</p>
+            <h1>Iniciar Proyecto</h1>
+            <form id="miFormulario">
+                <input type="text" placeholder="Escribe tu nombre" required>
+                <input type="email" placeholder="Correo (opcional)">
+                <button type="submit" class="btn-verde">Pasar al Proyecto</button>
+            </form>
+        </div>
+
+        
+        <div id="pantalla-proyecto" style="display: none;">
+            <div class="header-proyecto">
+                <p class="logo">🌍 CONCIENCIA GLOBAL</p>
+                <h1>Análisis del Planeta</h1>
+                <p class="frase">"Cuida tu planeta, ¿quién lo cuidará por ti?"</p>
+            </div>
+
+            <div class="bloque">
+                <h3>¿Qué está dañando nuestro hogar?</h3>
+                <img src="https://gstatic.com" alt="Daño ambiental">
+                
+                <ul class="lista">
+                    <li>Contaminación masiva por plásticos.</li>
+                    <li>Gases de efecto invernadero.</li>
+                    <li>Pérdida de bosques naturales.</li>
+                </ul>
+                
+                <p class="explicacion">
+                    Explicación: El uso excesivo de recursos y la falta de reciclaje están rompiendo el equilibrio del clima, afectando a todas las especies del mundo.
+                </p>
+            </div>
+
+            <div class="bloque">
+                <h3>¿Cuál es la solución real?</h3>
+                <img src="https://gstatic.com" alt="Solución ambiental">
+                
+                <ul class="lista">
+                    <li>Reducir el consumo de plásticos diario.</li>
+                    <li>Plantar árboles en nuestras comunidades.</li>
+                    <li>Usar energías limpias y renovables.</li>
+                </ul>
+                
+                <p class="explicacion">
+                    Explicación: Si actuamos ahora con pequeñas acciones, podemos regenerar los ecosistemas y asegurar un futuro saludable para las próximas generaciones.
+                </p>
+            </div>
+
+            <button onclick="location.reload()" class="btn-gris">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('miFormulario').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('pantalla-login').style.display = 'none';
+            document.getElementById('pantalla-proyecto').style.display = 'block';
+            document.getElementById('caja-principal').classList.add('expandir');
+        };
+    </script>
+</body>
+</html>
